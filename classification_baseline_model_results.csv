@@ -1,0 +1,22 @@
+model,sample,train_rows,test_rows,fit_seconds,accuracy,precision,recall,f1,roc_auc,average_precision
+RBF SVM,heavy_sample,800,600,0.03,0.7867,0.6051,0.6982,0.6484,0.8382,0.658
+Ridge classifier,fast_sample,1200,800,0.01,0.78,0.5919,0.7124,0.6466,0.8336,0.6934
+Logistic regression,fast_sample,1200,800,0.53,0.7638,0.5636,0.7257,0.6344,0.8206,0.6613
+Linear SVM,fast_sample,1200,800,0.02,0.7625,0.5638,0.7035,0.626,0.8296,0.6942
+SGD logistic classifier,fast_sample,1200,800,0.09,0.7538,0.5502,0.7035,0.6175,0.8054,0.6572
+Linear regression one-hot baseline,fast_sample,1200,800,0.01,0.7975,0.6778,0.5398,0.601,0.8445,0.7116
+PCA + logistic regression,fast_sample,1200,800,0.01,0.7388,0.5286,0.6947,0.6004,0.7787,0.6066
+Decision tree,fast_sample,1200,800,0.01,0.73,0.5164,0.6947,0.5925,0.7877,0.5792
+Nearest centroid,heavy_sample,800,600,0.0,0.725,0.5087,0.6923,0.5865,0.8004,0.6221
+LDA,fast_sample,1200,800,0.02,0.7825,0.634,0.5442,0.5857,0.7847,0.5952
+Random forest,fast_sample,1200,800,0.18,0.725,0.5101,0.6681,0.5785,0.7704,0.5807
+AdaBoost,fast_sample,1200,800,0.11,0.7812,0.6441,0.5044,0.5658,0.8027,0.6139
+Extra trees,fast_sample,1200,800,0.11,0.7038,0.4828,0.6814,0.5651,0.7535,0.5589
+Bernoulli Naive Bayes,fast_sample,1200,800,0.0,0.7062,0.4855,0.6681,0.5624,0.752,0.5605
+PCA + QDA,heavy_sample,800,600,0.01,0.7583,0.5759,0.5385,0.5566,0.7832,0.6094
+Gaussian Naive Bayes,fast_sample,1200,800,0.0,0.5925,0.3853,0.7434,0.5076,0.6761,0.431
+Histogram gradient boosting,fast_sample,1200,800,0.17,0.7738,0.6667,0.3982,0.4986,0.8017,0.64
+One-hidden-layer MLP,neural_sample,1200,600,0.07,0.7767,0.6882,0.3787,0.4885,0.7887,0.5923
+K-means majority-label assignment,heavy_sample,800,600,0.07,0.7383,0.5462,0.4201,0.4749,0.706,0.4538
+k-nearest neighbors,heavy_sample,800,600,0.0,0.7717,0.7105,0.3195,0.4408,0.7877,0.59
+Small PyTorch CNN baseline,neural_sample,1200,600,0.11,0.2817,0.2817,1.0,0.4395,0.5351,0.3206
